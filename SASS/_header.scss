@@ -6,8 +6,10 @@
     background-color: $primarycolor;
     align-items: center;
     border-bottom: 3px solid $secondarycolor;
+    box-sizing: border-box;
     &__left {
-        margin-left: 130px;
+        white-space: nowrap; //stops the logo to wrap when the screen narrows down
+        margin-left: 9%;
         & p {
             color: white;
             font-size: 30px;
@@ -19,12 +21,12 @@
         }
     }
     &__right {
-        margin-right: 130px;
+        margin-right: 15%;
         &--navbar {
             display: flex;
             list-style-type: none;
             & li {
-                padding-right: 36px;
+                padding-right: 20%;
                 & a {
                     text-decoration: none;
                     text-transform: uppercase;
@@ -42,17 +44,14 @@
                     color: #ccc;
                 }
             }
-            &-home {
-                color: $secondarycolor !important;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-weight: 700 !important;
-                font-size: 16px;
-                line-height: 24px;
-            }
-            &-home:hover {
-                color: #ccc !important;
-            }
         }
     }
 }
+
+// a:active {
+//     color: blue;
+// }
+// a[tabindex]:focus {
+//     color:blue;
+//     outline: none;
+// }
